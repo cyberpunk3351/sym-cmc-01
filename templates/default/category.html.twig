@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}My First Admin!{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h3>Category {{ category.title }}</h3>
+        {% for post in posts %}
+            <p>{{ post }}</p>
+        {% endfor %}
+    </div>
+
+
+
+{% endblock %}
